@@ -2373,7 +2373,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7807d7ae-3806-4647-8b15-c7e8426a48c8)
     )
-    (fp_text value "Conn_01x06" (at 0 15.03) (layer "F.Fab")
+    (fp_text value "ICP Header" (at 0 15.03) (layer "F.Fab")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 57cebd40-2ea3-467d-9901-399ebeb2c63d)
     )
