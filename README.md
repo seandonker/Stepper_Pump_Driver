@@ -16,9 +16,10 @@ Apart from the provided (not yet provided) BOM from Digikey. The system needs a 
 
 Programming and Power
 ---------------------
-The board uses the common ATMEGA 328P found in some standard models of Arduinos as this allows for the use of the libraries created for the OLED screen saving a lot of time and effort. 
-There is an in-circuit-serial-programming (ICSP) header to burn the arduino bootloader if the chips were purchased blank from a distributor. Then you can either continue using the header for programming or the USB port. The motor driver can only be powered from the 12v source but the MCU can run from either the USB or the 12v adapter allowing for programming without the 12v supply. Both can be plugged in simultaneously without issue for serial communication for data logging or other purposes. 
+The board uses the common ATMEGA328P found in some standard models of Arduinos as this allows for the use of the libraries created for the OLED screen saving a lot of time and effort. 
+There is an in-circuit-serial-programming (ICSP) header to burn the arduino bootloader if the chips were purchased blank from a distributor. Then you can either continue using the header for programming or use the USB port. For the USB to work however, the USB host controller chip (FT230X) needs to be programmed through the FT_PROG utility to change one output signal of the device. Please check the schematic and the datasheet of the chip for more details. The motor driver can only be powered from the 12v source but the MCU can run from either the USB or the 12v adapter allowing for programming without the 12v supply. Both can be plugged in simultaneously without issue for serial communication for data logging or other purposes. 
 
 Future Improvements
 ------------------
 I would like to use a 5v regulator capable of higher input voltages (or use a DC-DC converter) so the motor controller is capable of higher speeds. With that, it would be better if the PCB has 2oz copper layers for more current and better heat sinking capabilities. This would likely require a 4-layer board however as the USB trace impedance would become hard to design. A rotary encoder would be a much better method of input too, and would be easy to implement in hardware with a 4-layer board (but would require slightly more programming).
+
