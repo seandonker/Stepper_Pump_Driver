@@ -8,11 +8,13 @@ This project was created as a cheaper alternative for fully integrated peristalt
 
 Component Requirements
 ---------------------
-Apart from the provided (not yet provided) BOM from Digikey. The system needs a power supply, stepper motor, and the display purchased separately. 
+Apart from the provided BOM and Digikey list. The system needs a power supply, stepper motor, and the display purchased separately. 
 * The power supply jack is a standard 2.1mmID x 5.5mmOD size and the supply should be rated for 12v and 3 amps or greater. 
 * Bipolar stepper motor (currently selected plug socket is for a JST XHP-4 and max motor current is 1A RMS)
 * The OLED display is a common 0.91" I2C with a SSD1306 chipset used in Arduino projects
 * The USB differential lines were designed for a 1mm thick, 1oz top and bottom, 2-layer board (I ordered from JLPCB)
+
+[Digikey List](https://www.digikey.ca/en/mylists/list/M6HG9QW1PJ)
 
 Programming and Power
 ---------------------
